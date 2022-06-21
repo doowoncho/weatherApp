@@ -8,17 +8,31 @@
     
     <title>Document</title>
 </head>
-<body>
+<body onload="getCity()">
     <div class="container">
-       <h1 id = "text">knowledge to everything</h1>
-       <br>
-       <input type="text" placeholder="city" id="city" name="name"></input>
-    
-       <button class = "btn" onclick="getCity()"> Submit</button>
+       
+       <!-- <h1 id = "text">knowledge to everything</h1> -->
+            <div class = "location"> 
+                <h1 id = "loc"></h1>
+            </div>
+            <br>
+                <h1 id = "temp"></h1>
+                <br>
+            <div class = "main">
+                <h2 id = "dp"></h2>
+            </div>
+            <div class = "wind"> 
+                <h2 id = "speed"></h1>
+            </div>
+
+            <input type="text" placeholder="city" id="city" name="name"></input>
+            <button class = "btn" onclick="getCity()"> Submit</button>
+       
        
 
      </div>
 
-     <script src="app.js"></script>
+     <script src="app.js">
+     </script>
 </body>
 </html>

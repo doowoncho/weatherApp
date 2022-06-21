@@ -1,0 +1,44 @@
+{
+    "coord": {
+      "lon": -114,
+      "lat": 51
+    },
+    "weather": [
+      {
+        "id": 803,
+        "main": "Clouds",
+        "description": "broken clouds",
+        "icon": "04d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 17.04,
+      "feels_like": 16.39,
+      "temp_min": 15.98,
+      "temp_max": 18.56,
+      "pressure": 1015,
+      "humidity": 61
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 6.69,
+      "deg": 10,
+      "gust": 9.26
+    },
+    "clouds": {
+      "all": 75
+    },
+    "dt": 1655750992,
+    "sys": {
+      "type": 2,
+      "id": 2007302,
+      "country": "CA",
+      "sunrise": 1655724074,
+      "sunset": 1655783636
+    },
+    "timezone": -21600,
+    "id": 5955550,
+    "name": "Forest Lawn Industrial",
+    "cod": 200
+  }
