@@ -24,7 +24,7 @@ async function getCity(){
 
     response = await  fetch(`https://api.unsplash.com/search/photos?query=${city} landscape&client_id=lRvdtLBVnMmg1dh4K0scC8LSgPE_zpFEEy9ACryBWpY`)
     data = await response.json();
-    // document.body.style.backgroundImage = `url("${data["results"][0]['urls']['full']}")`
+    document.body.style.backgroundImage = `url("${data["results"][0]['urls']['full']}")`
 
 
 }
