@@ -3,8 +3,12 @@
 body {
   margin: 0;
   font-family: 'Anek Latin', sans-serif;
-  background-size: cover;
   background-color: rgb(105, 192, 243);
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 * {
