@@ -44,6 +44,7 @@ p {
   border-radius: 2rem;
   background: #ffffffd0;
   width: 400px;
+  padding-bottom: 10px  ;
 
 }
 
@@ -66,3 +67,5 @@ p {
   color: grey;
 
 }
+
+
