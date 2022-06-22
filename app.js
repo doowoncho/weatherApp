@@ -4,6 +4,8 @@ var city = ""
 var units = "metric"
 
 async function getCity(){
+
+    document.body.style.backgroundImage = "";
     city = document.getElementById("city").value
     if(city == ""){
         city = "Boston"   
@@ -17,15 +19,19 @@ async function getCity(){
     let country = data['sys']['country']
     let wind = data['wind']['speed']
 
-    response = await  fetch(`https://api.unsplash.com/search/photos?query=${city} landscape&client_id=lRvdtLBVnMmg1dh4K0scC8LSgPE_zpFEEy9ACryBWpY`)
-    data = await response.json();
-
-    document.body.style.backgroundImage = `url("${data["results"][Math.floor(Math.random() * 10)]['urls']['full']}")`
+   
     document.getElementById("loc").textContent = `${city}, ${country}`
     document.getElementById("temp").textContent = `${temperature}°c`
     document.getElementById("dp").textContent = `${desc}`
     document.getElementById("speed").textContent = `windspeed: ${wind} km/h`
 
+}
+
+async function getPhoto(){
+    response = await  fetch(`https://api.unsplash.com/search/photos?query=${city} landscape&client_id=lRvdtLBVnMmg1dh4K0scC8LSgPE_zpFEEy9ACryBWpY`)
+    data = await response.json();
+
+    document.body.style.backgroundImage = `url("${data["results"][Math.floor(Math.random() * 10)]['urls']['full']}")`   
 }
 
 

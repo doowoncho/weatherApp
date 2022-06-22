@@ -39,28 +39,14 @@ p {
 
 .container {
   text-align: center;
-  border: 2px rgb(255, 255, 255) solid;
-  margin: 10%;
+  margin: 0 auto;
+  margin-top: 15%;
   border-radius: 2rem;
   background: #ffffffd0;
+  width: 400px;
 
 }
 
-.location{
-  
-}
-
-.main{
-  
-}
-
-.temp{
-  
-}
-
-.wind{
-  
-}
 
 .btn {
   display: inline-block;
