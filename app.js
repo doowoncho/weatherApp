@@ -2,6 +2,7 @@ var text = document.getElementById("text");
 const apikey = "bb741e731acfb284d24a3a632ebaffbb";
 var city = ""
 var units = "metric"
+var image = "https://api.unsplash.com/search/photos?query=$boston landscape&client_id=lRvdtLBVnMmg1dh4K0scC8LSgPE_zpFEEy9ACryBWpY"
 
 async function getCity(){
 
@@ -25,13 +26,18 @@ async function getCity(){
     document.getElementById("dp").textContent = `${desc}`
     document.getElementById("speed").textContent = `windspeed: ${wind} km/h`
 
+    getPhoto();
 }
-
 async function getPhoto(){
     response = await  fetch(`https://api.unsplash.com/search/photos?query=${city} landscape&client_id=lRvdtLBVnMmg1dh4K0scC8LSgPE_zpFEEy9ACryBWpY`)
     data = await response.json();
 
-    document.body.style.backgroundImage = `url("${data["results"][Math.floor(Math.random() * 10)]['urls']['full']}")`   
+    image = `url("${data["results"][Math.floor(Math.random() * 10)]['urls']['full']}")`  
+  
+   
 }
 
+function showPhoto(){
+    document.body.style.backgroundImage = image;
+}
 
